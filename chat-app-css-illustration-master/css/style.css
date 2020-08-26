@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: rubik;
+    font-size: 16px;
+}
+
+/*bar left*/
+.sidebar{
+    background: hsl(276, 55%, 52%);
+    border-radius: 2px 0px 170px 170px ;
+    height: 550px;
+    width: 30%;
+    margin-left: -10px;
+}
+
+/* Phone Chat*/
+.phone-chat{
+    background:hsl(0, 0%, 100%);
+    border-radius: 25px 25px 25px 25px;
+    height: 540px;
+    width: 19%;
+    margin-left: 350px;
+    margin-top: -35%;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+/*Chat Top Box*/
+.phone-chat-top-box{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient( to right, hsl(276, 55%, 52%), hsl(295, 100%, 61%));
+    border-radius: 40px 40px 0px 0px;
+}
+.phone-chat-top-back-box{
+    width: 10px;
+    height: 10px;
+    position: relative;
+    transform: rotate(50deg);
+    border-radius: 20px;
+}
+.phone-chat-top-back-box::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: hsl(0, 0%, 100%);
+    width: 2px;
+    height: 100%;
+    border-radius: 20px;
+
+}
+.phone-chat-top-back-box::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: rotate(0deg);
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    height: 2px;
+    border-radius: 20px;
+}
+.phone-chat-top-box img{
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.432);
+}
+
+.chat-user-name h4{
+    padding-left: 70px;
+    margin-top: -50px;
+    color: white;
+    font-size: 15px;
+}
+
+.chat-user-name p{
+    padding-left: 70px;
+    color: hsl(0, 0%, 90%);
+    font-size: 10px;
+}
+
+.phone-option-menu{
+    width: 4px;
+    margin-left: 85%;
+    height: 30px;
+    margin-top: -20px;
+}
+
+.phone-option-menu span{
+    width: 100%;
+    display: block;
+    border-radius: 100%;
+    margin-bottom: 5px;
+    height: 2px;
+    background-color: white;
+}
+
+/*Phone CHat Content*/
+.phone-chat-content{
+    width: 88%;
+    padding: 10px 10px;
+    background-color: hsl(0, 0%, 95%);
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0px 0px 25px 25px; 
+}
+
+/*Phone CHat Content left*/
+.chats-left p{
+    padding: 6px;
+    width: 55%;
+    margin-bottom: 10px;
+    font-size: 10px;
+    color: hsl(276, 55%, 52%);
+    background-color: hsl(0, 0%, 85%);
+    border-radius: 10px  10px 10px 3px;
+}
+.phone-chat-content-pics{
+    width: 73%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+}
+.phone-chat-content-pics img{
+    width: 50px;
+    margin: 0px 0px 0px 2px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/*Phone CHat Content right*/
+.chats-right p{
+    padding: 6px;
+    width: 55%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-bottom: 10px;
+    font-size: 10px;
+    color: hsl(271, 15%, 43%);
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px  10px 3px 10px;
+}
+
+/*Button*/
+button{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px  10px 10px 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    outline: none;
+    border: none;
+    color: white;
+    background-image: linear-gradient(to left, hsl(246, 55%, 52%),  hsl(289, 100%, 72%));
+}
+button span{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50px;
+    border: 2px solid hsl(0, 0%, 90%);
+}
+button p {
+    margin-right: auto;
+    color: rgba(255, 255, 255, 0.733);
+}
+
+/* Submit Section*/
+#input{
+    width: 90%;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+}
+#input input{
+    outline: none;
+    background: none;
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 6px;
+}
+.send_messg{
+    text-align: center;
+    display: flex;
+    padding: 13px;
+    align-items: center;
+    background-color: hsl(271, 36%, 24%);
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+}
+#input .send{
+    padding: 5px;
+    border-radius: 100px;
+    z-index: 1;
+    position: relative;
+    transform: rotate(220deg);
+}
+#input .send::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: hsl(270, 20%, 96%);
+    width: 2px;
+    height: 100%;
+    border-radius: 20px;
+}
+#input .send::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: rotate(0deg);
+    background-color: hsl(270, 20%, 96%);
+    width: 100%;
+    height: 2px;
+    border-radius: 20px;
+}
+::placeholder{
+    color: hsl(206, 6%, 79%);
+    font-size: 16px;
+}
+
+.text {
+    margin-top:-300px;
+    margin-left: 700px;
+}
+.text h1{
+    color: hsl(271, 36%, 24%);
+    margin-bottom: 20px;
+}
+.text p{
+    color: grey;
+}
+
+
+.attribution { 
+    text-transform: uppercase;
+    font-size: 16px; 
+    margin-left: 700px;
+    margin-top: 100px;
+    position: relative; 
+}
+.attribution a { 
+    text-decoration: none;
+    color: hsl(228, 45%, 44%); 
+}
